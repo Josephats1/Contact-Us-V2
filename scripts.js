@@ -54,7 +54,7 @@ class MouseParticle {
   }
 }
 
-// Particle Class (Existing Main Particles)
+// Particle Class (Main Particles)
 class Particle {
   constructor(x, y, size, speedX, speedY) {
     this.x = x;
@@ -131,6 +131,11 @@ window.addEventListener("mousemove", (event) => {
   const speedY = (Math.random() - 0.5) * 2;
   const color = `hsl(${Math.random() * 360}, 100%, 60%)`; // Random bright colors
   mouseParticlesArray.push(new MouseParticle(mouse.x, mouse.y, size, speedX, speedY, color));
+
+  // Limit number of mouse particles
+  if (mouseParticlesArray.length > 300) {
+    mouseParticlesArray.splice(0, 50);
+  }
 });
 
 // Animation Loop
@@ -171,3 +176,14 @@ window.addEventListener("resize", () => {
 initParticles();
 animate();
 
+document.addEventListener('DOMContentLoaded', function() {
+  new Typed('#hero-typed', {
+    strings: [
+      "Got a question or an idea? We’re just a message away. At BeSelfless Uganda, we strive to build meaningful connections and offer unwavering support to our community. From the heart of Mukono to the world, your insights and experiences help us grow and serve you better. Reach out, and let's make a difference together. Your journey with us starts with a simple conversation—because at BeSelfless Uganda, every voice counts and every action makes a difference."
+    ],
+    typeSpeed: 20,
+    backSpeed: 25,
+    loop: false,
+    showCursor: false
+  });
+});

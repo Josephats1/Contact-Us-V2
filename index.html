@@ -5,25 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> <!-- Typed.js Library -->
 </head>
 <body>
-  <!-- Particle Canvas -->
-  <canvas id="particle-canvas"></canvas>
+  <!-- Navbar -->
+  <nav>
+    <ul class="nav-links">
+      <button>Home</button>
+      <button>About</button>
+      <button>Services</button>
+      <button>Contact</button>
+    </ul>
+  </nav>
 
+  <!-- Main Content -->
+  <canvas id="particle-canvas"></canvas>
   <section class="hero">
     <div class="hero-content">
-      <h1>Welcome to Jerry Fly</h1>
-      <p>Connecting creativity with purpose</p>
-      <a href="#contact" class="cta-button">Get In Touch</a>
+      <h1>BeSelfless</h1>
+      <p id="hero-typed"></p> <!-- Typed.js Target Element -->
+      
     </div>
   </section>
 
   <!-- Contact Section -->
   <section id="contact" class="contact-container">
-    <h2 style="color: #00ffff; font-family: 'Brush Script MT', cursive; font-size: 3rem;">Contact Us</h2>
+  
     <div class="contact-grid">
       <!-- Contact Form -->
       <form>
+        <h5>Contact Us</h5>
         <div class="input-group">
           <input type="text" id="name" required>
           <label for="name">Name</label>
@@ -40,15 +52,16 @@
       </form>
 
       <!-- Company Info Card -->
-      <div class="company-card">
-        <h3>Jerry Fly Ent</h3>
-        <p>Address: 123 Innovation Lane, Creativity City</p>
-        <p>Email: contact@jerryfly.com</p>
-        <p>Phone: +123 456 7890</p>
-      </div>
-    </div>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-    <!-- Social Media Icons -->
+<div class="company-card">
+  <h3>Get In Touch</h3>
+  <p><i class="fas fa-map-marker-alt"></i>  256 Mukono-Uganda </p>
+  <p><i class="fas fa-envelope"></i>  beselflessuganda@gmail.com</a></p>
+  <p><i class="fas fa-phone"></i> +256 200 926095</a></p>
+</div>
+
+    </div>
     <div class="social-icons">
       <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
       <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
@@ -57,10 +70,17 @@
     </div>
   </section>
 
-  <!-- FontAwesome for Icons -->
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 BeSelfless. All rights reserved.</p>
+    <p>
+      <a href="#privacy">Privacy Policy</a> | 
+      <a href="#terms">Terms of Service</a>
+    </p>
+  </footer>
 
-  <!-- Particle JS -->
-  <script src="scripts.js"></script>
+  <script src="scripts.js"></script> <!-- Your Script -->
+ 
 </body>
 </html>
+
