@@ -179,9 +179,9 @@ animate();
 document.addEventListener('DOMContentLoaded', function() {
   new Typed('#hero-typed', {
     strings: [
-      "Got a question or an idea? We’re just a message away. At BeSelfless Uganda, we strive to build meaningful connections and offer unwavering support to our community. From the heart of Mukono to the world, your insights and experiences help us grow and serve you better. Reach out, and let's make a difference together. Your journey with us starts with a simple conversation—because at BeSelfless Uganda, every voice counts and every action makes a difference."
+      "Got a question or an idea? We’re just a message away. At BeSelfless Uganda, we strive to build meaningful connections and offer unwavering support to our community. From the heart of Mukono to the world, your insights and experiences help us grow and serve you better. Reach out, and let's make a difference together. Your journey with us starts with a simple conversation because at BeSelfless Uganda, every voice counts and every action makes a difference."
     ],
-    typeSpeed: 20,
+    typeSpeed: 22,
     backSpeed: 25,
     loop: false,
     showCursor: false
