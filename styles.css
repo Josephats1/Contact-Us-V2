@@ -197,7 +197,7 @@ form {
 }
 
 .social-icons .twitter:hover {
-  color: #0d8ae6;
+  color:rgb(96, 223, 174);
   transform: scale(1.3); /* Increase size on hover */
   text-shadow: 0 0 10px #0d8ae6, 0 0 20px #0d8ae6;
 }
